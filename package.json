@@ -1,6 +1,6 @@
 {
   "name": "dynamically-css",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Dynamically CSS in HTML",
   "main": "index.js",
   "scripts": {
