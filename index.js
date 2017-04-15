@@ -1,6 +1,6 @@
-module.exports = (doc, cssText) => {
-  const style = doc.createElement('style');
+module.exports = function(cssText){
+  const style = document.createElement('style');
   style.type = 'text/css';
   style.innerHTML = cssText;
-  doc.getElementsByTagName('head')[0].appendChild(style);
+  document.getElementsByTagName('head')[0].appendChild(style);
 };

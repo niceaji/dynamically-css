@@ -1,9 +1,11 @@
 {
   "name": "dynamically-css",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Dynamically CSS in HTML",
   "main": "index.js",
   "scripts": {
+    "test:build": "browserify test/index.js -o test/dist/index.js",
+    "gh-pages": "git push origin master && git subtree push --prefix test/dist origin gh-pages",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/niceaji/dynamically-css/issues"
   },
-  "homepage": "https://github.com/niceaji/dynamically-css#readme"
+  "homepage": "https://github.com/niceaji/dynamically-css#readme",
+  "devDependencies": {
+    "browserify": "^14.3.0"
+  }
 }
