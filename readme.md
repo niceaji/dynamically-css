@@ -10,11 +10,14 @@ $ npm install dynamically-css
 
 ## Usage
 
+[example](test)
+
 ```
 var dynamicallyCss = require('dynamically-css');
 
 dynamicallyCss('h1 {color:red}');
 ```
+
 
 
 ## Demo

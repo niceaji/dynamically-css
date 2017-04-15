@@ -1,2 +1,4 @@
 var dynamicallyCss = require('..');
-dynamicallyCss('h1 {color: blue}');
+var cssText = require('./app.css');
+
+dynamicallyCss(cssText);
