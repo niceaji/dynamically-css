@@ -5,9 +5,12 @@ module.exports = function(cssText){
   style.innerHTML = cssText;
   document.getElementsByTagName('head')[0].appendChild(style);
 };
-
 },{}],2:[function(require,module,exports){
+module.exports = "body {\n  background-color: #333;\n}\nh1 {\n  color: white;\n}\n";
+},{}],3:[function(require,module,exports){
 var dynamicallyCss = require('..');
-dynamicallyCss('h1 {color: blue}');
+var cssText = require('./app.css');
 
-},{"..":1}]},{},[2]);
+dynamicallyCss(cssText);
+
+},{"..":1,"./app.css":2}]},{},[3]);
